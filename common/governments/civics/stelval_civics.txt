@@ -116,6 +116,7 @@ civic_personality_cult = {
 	random_weight = { base = 5 }
 	modifier = {
 		country_base_influence_produces_add = 1
+                country_unity_produces_mult = 0.05
 
 	}
 }
