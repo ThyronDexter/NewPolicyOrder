@@ -161,3 +161,43 @@ civic_socialism = {
 	}
 }
 
+civic_science_cult = {
+	potential = {
+		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+		authority = { NOT = { value = auth_corporate } }
+	}
+	possible = {
+		ethics = {
+			OR = {
+				value = ethic_spiritualism
+			}
+		}
+	}
+	random_weight = { base = 5 }
+	modifier = {
+
+	}
+}
+
+civic_hedonists = {
+	potential = {
+		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+		authority = { NOT = { value = auth_corporate } }
+	}
+	possible = {
+		ethics = {
+			OR = {
+				value = ethic_fanatic_egalitarian
+			}
+		}
+	}
+	random_weight = { base = 5 }
+	modifier = {
+                pop_happiness = 0.20
+                pop_growth_speed = 0.15
+                planet_pops_consumer_goods_upkeep_mult = 0.25
+                planet_jobs_food_upkeep_mult = 0.25
+                pop_amenities_usage_mult = 0.25
+
+	}
+}
