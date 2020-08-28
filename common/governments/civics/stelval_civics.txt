@@ -202,3 +202,25 @@ civic_hedonists = {
 
 	}
 }
+
+civic_corruption = {
+	potential = {
+		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+		authority = { NOT = { value = auth_corporate } }
+	}
+	modifier = {
+		country_base_influence_produces_add = 0.5
+                pop_cat_worker_political_power = 1.25
+                monthly_trades_energy_produces_add = -0.05
+	}
+	possible = {
+		ethics = {
+			NOR = {
+				text = civic_tooltip_not_egalitarian
+				value = ethic_egalitarian
+				value = ethic_fanatic_egalitarian
+			}
+		}
+	}
+	random_weight = { base = 5 }
+}
