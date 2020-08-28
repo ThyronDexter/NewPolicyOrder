@@ -224,3 +224,21 @@ civic_corruption = {
 	}
 	random_weight = { base = 5 }
 }
+
+civic_pacifist_culture = {
+	potential = {
+		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+		authority = { NOT = { value = auth_corporate } }
+	}
+	possible = {
+		ethics = {
+			OR = {
+				value = ethic_pacifist
+			}
+		}
+	}
+	random_weight = { base = 5 }
+	modifier = {
+		pop_happiness = 0.05
+	}
+}
