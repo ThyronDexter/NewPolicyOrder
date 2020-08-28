@@ -1006,20 +1006,4 @@ civic_diplomatic_corps = {
 	}
 } 
 
-civic_science_cult = {
-	potential = {
-		ethics = { NOT = { value = ethic_gestalt_consciousness } }
-		authority = { NOT = { value = auth_corporate } }
-	}
-	possible = {
-		ethics = {
-			OR = {
-				value = ethic_spiritualism
-			}
-		}
-	}
-	random_weight = { base = 5 }
-	modifier = {
 
-	}
-}
