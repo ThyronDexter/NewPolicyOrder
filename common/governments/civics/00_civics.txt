@@ -46,7 +46,7 @@ civic_corvee_system = {
 	random_weight = { base = 5 }
 	modifier = {
 		pop_growth_from_immigration = 0.15
-		pop_resettlement_cost_mult = -0.50
+		pop_resettlement_cost_mult = -0.55
 	}
 }
 
@@ -138,7 +138,7 @@ civic_beacon_of_liberty = {
 	}
 	random_weight = { base = 5 }
 	modifier = {
-		country_unity_produces_mult = 0.15
+		country_unity_produces_mult = 0.20
 	}
 }
 
@@ -153,6 +153,7 @@ civic_exalted_priesthood = {
 			OR = {
 				value = auth_oligarchic
 				value = auth_dictatorial
+                                value = auth_imperial
 			}
 		}
 		ethics = {
@@ -243,7 +244,7 @@ civic_citizen_service = {
 	}
 	random_weight = { base = 5 }
 	modifier = {
-		country_naval_cap_mult = 0.15
+		country_naval_cap_mult = 0.20
 	}
 }
 
@@ -283,7 +284,7 @@ civic_feudal_realm = {
 	description = "civic_tooltip_feudal_realm_effects"
 	modifier = {
 		country_subject_power_penalty_mult = -0.5
-		empire_size_pops_mult = -0.10
+		empire_size_pops_mult = -0.15
 	}
 }
 
@@ -333,7 +334,7 @@ civic_environmentalist = {
 	}
 	random_weight = { base = 5 }
 	modifier = {
-		planet_pops_consumer_goods_upkeep_mult = -0.15
+		planet_pops_consumer_goods_upkeep_mult = -0.2
 	}
 }
 
@@ -387,7 +388,7 @@ civic_inwards_perfection = {
 	random_weight = { base = 1000 }
 	modifier = {
 		country_unity_produces_mult = 0.20
-		pop_growth_speed = 0.10
+		pop_growth_speed = 0.15
 		country_edict_cap_add = 1
 		pop_citizen_happiness = 0.05
 		envoys_add = -1
@@ -470,7 +471,7 @@ civic_cutthroat_politics = {
 	}
 	random_weight = { base = 5 }
 	modifier = {
-		edicts_cost_mult = -0.20
+		edicts_cost_mult = -0.25
 	}
 }
 
@@ -553,7 +554,7 @@ civic_shadow_council = {
 	random_weight = { base = 5 }
 	modifier = {
 		country_election_influence_cost_mult = -0.75
-		planet_jobs_ruler_produces_mult = 0.10
+		planet_jobs_ruler_produces_mult = 0.20
 	}
 }
 
@@ -581,6 +582,7 @@ civic_parliamentary_system = {
 	random_weight = { base = 5 }
 	modifier = {
 		pop_factions_produces_mult = 0.25
+                faction_approval = 0.10
 	}
 }
 
@@ -624,7 +626,7 @@ civic_functional_architecture = {
 	}
 	random_weight = { base = 5 }
 	modifier = {
-		planet_structures_cost_mult = -0.10
+		planet_structures_cost_mult = -0.15
 		planet_structures_upkeep_mult = -0.15
 	}
 }
@@ -1002,7 +1004,7 @@ civic_diplomatic_corps = {
 
 	modifier = {
 		envoys_add = 2
-		diplo_weight_mult = 0.1
+		diplo_weight_mult = 0.15
 	}
 } 
 
