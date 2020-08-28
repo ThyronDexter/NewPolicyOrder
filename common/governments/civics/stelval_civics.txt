@@ -1,0 +1,61 @@
+civic_cult_of_nature = {
+	potential = {
+		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+		authority = { NOT = { value = auth_corporate } }
+	}
+	possible = {
+		ethics = {
+			OR = {
+				text = civic_tooltip_spiritualist
+				value = ethic_spiritualist
+				value = ethic_fanatic_spiritualist
+			}
+		}
+		civics = {
+			NOT = {
+				value = civic_cult_of_machines
+			}
+		}
+	}
+	random_weight = { base = 3 }
+	modifier = {
+		pop_environment_tolerance = 0.10
+	}
+}
+
+civic_cult_of_machines = {
+	potential = {
+		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+		authority = { NOT = { value = auth_corporate } }
+	}
+	possible = {
+		ethics = {
+			OR = {
+				text = civic_tooltip_spiritualist
+				value = ethic_spiritualist
+				value = ethic_fanatic_spiritualist
+			}
+		}
+		civics = {
+			NOT = {
+				value = civic_cult_of_nature
+			}
+		}
+	}
+	random_weight = { base = 3 }
+	modifier = {
+		planet_pop_assembly_mult = 0.05
+		planet_pops_robotics_upkeep_mult = -0.1
+	}
+}
+
+civic_mining_corp = {
+	potential = {
+		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+		authority = { value = auth_corporate }
+	}
+	random_weight = { base = 5 }
+	modifier = {
+		planet_miners_minerals_produces_add = 1
+	}
+}
