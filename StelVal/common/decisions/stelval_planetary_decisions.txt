@@ -1,0 +1,45 @@
+##########################################################################
+# Decisions
+##########################################################################
+### Technoconservatism Direct Science
+decision_direct_science = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	icon = decision_direct_science
+	
+	enactment_time = 200
+
+	resources = {
+		category = decisions
+		cost = {
+			energy = 5000
+		}
+	}
+
+	potential = {
+		owner = {
+			has_valid_civic = civic_technoconservatism
+		}
+		NOT = { is_planet_class = pc_machine }
+		NOT = { is_planet_class = pc_hive }
+		NOT = { is_planet_class = pc_city }
+	}
+
+	allow = {
+		NOT = { has_modifier = planet_direct_science }
+	}
+
+	effect = {
+		add_modifier = { modifier = "planet_direct_science" days = -1 }
+	}
+
+	ai_weight = {
+		weight = 5
+
+		# dick penis
+		modifier = {
+			factor = 0
+			free_housing < 1
+		}
+	}
+}
