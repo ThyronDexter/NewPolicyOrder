@@ -243,6 +243,15 @@ civic_pacifist_culture = {
                 empire_size_pops_mult = -0.10
 	}
 }
+
+civic_machine_admin_ai = {
+    potential = { authority = { value = auth_machine_intelligence } }
+    random_weight = { base = 5 }
+    modifier = {
+               country_admin_cap_mult = 0.15
+               country_admin_cap_add = 10
+    }
+}
 ### Here be NORMAL civics
 # Mat + Aut: Technoconservatism
 civic_technoconservatism = {
