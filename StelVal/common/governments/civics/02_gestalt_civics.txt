@@ -48,7 +48,7 @@ civic_hive_one_mind = {
 	description = "civic_hive_one_mind_effects"
 	random_weight = { base = 5 }
 	modifier = {
-		country_unity_produces_mult = 0.15
+		country_unity_produces_mult = 0.2
 	}
 }
 
@@ -56,7 +56,7 @@ civic_hive_divided_attention = {
 	potential = { authority = { value = auth_hive_mind } }
 	random_weight = { base = 5 }
 	modifier = {
-		country_admin_cap_mult = 0.10
+		country_admin_cap_mult = 0.20
 	}
 }
 
@@ -65,8 +65,8 @@ civic_hive_strength_of_legions = {
 	random_weight = { base = 5 }
 	modifier = {
 		army_starting_experience_add = 100
-		army_damage_mult = 0.20
-		armies_upkeep_mult = -0.20
+		army_damage_mult = 0.25
+		armies_upkeep_mult = -0.25
 	}
 }
 
@@ -74,7 +74,7 @@ civic_hive_subsumed_will = {
 	potential = { authority = { value = auth_hive_mind } }
 	random_weight = { base = 5 }
 	modifier = {
-		empire_size_pops_mult = -0.20
+		empire_size_pops_mult = -0.25
 	}
 }
 
@@ -83,7 +83,7 @@ civic_hive_pooled_knowledge = {
 	random_weight = { base = 5 }
 	modifier = {
 		leader_skill_levels = 1
-		species_leader_exp_gain = 0.1
+		species_leader_exp_gain = 0.25
 	}
 }
 
@@ -141,7 +141,7 @@ civic_hive_empath = {
 	description = "civic_tooltip_empath_effects"
 	modifier = {
 		envoys_add = 2
-		diplo_weight_mult = 0.1
+		diplo_weight_mult = 0.15
 	}
 }
 
@@ -259,8 +259,8 @@ civic_machine_builder = {
 	potential = { authority = { value = auth_machine_intelligence } }
 	random_weight = { base = 5 }
 	modifier = {
-		planet_structures_cost_mult = -0.10
-		planet_structures_upkeep_mult = -0.10
+		planet_structures_cost_mult = -0.15
+		planet_structures_upkeep_mult = -0.15
 	}
 }
 
@@ -270,7 +270,8 @@ civic_machine_factory_overclock = {
     random_weight = { base = 5 }
     modifier = {
         leader_skill_levels = 1
-		species_leader_exp_gain = 0.1
+		species_leader_exp_gain = 0.25
+                planet_jobs_simple_drone_produces_mult = 0.05
     }
 }
 
@@ -278,7 +279,7 @@ civic_machine_unitary_cohesion = {
 	potential = { authority = { value = auth_machine_intelligence } }
 	random_weight = { base = 5 }
 	modifier = {
-		country_unity_produces_mult = 0.15
+		country_unity_produces_mult = 0.20
 	}
 }
 
@@ -294,7 +295,7 @@ civic_machine_zero_waste_protocols = {
 	potential = { authority = { value = auth_machine_intelligence } }
 	random_weight = { base = 5 }
 	modifier = {
-		planet_pops_robotics_upkeep_mult = -0.10
+		planet_pops_robotics_upkeep_mult = -0.20
 	}
 }
 
@@ -329,8 +330,10 @@ civic_machine_warbots = {
 	}
 	random_weight = { base = 5 }
 	modifier = {
-		army_damage_mult = 0.2
-		armies_upkeep_mult = -0.2
+                army_starting_experience_add = 100
+		army_damage_mult = 0.25
+		armies_upkeep_mult = -0.25
+                
 	}
 }
 
@@ -346,8 +349,9 @@ civic_machine_delegated_functions = {
 	potential = { authority = { value = auth_machine_intelligence } }
 	random_weight = { base = 5 }
 	modifier = {
-		leaders_upkeep_mult = -0.25
+		leaders_upkeep_mult = -0.50
 		country_leader_pool_size = 1
+                planet_jobs_complex_drone_produces_mult
 	}
 }
 
@@ -356,6 +360,7 @@ civic_machine_predictive_analysis = {
 	random_weight = { base = 5 }
 	modifier = {
 		num_tech_alternatives_add = 1
+                country_tech_research_speed = 0.05
 	}
 }
 
@@ -363,7 +368,7 @@ civic_machine_replication = {
 	potential = { authority = { value = auth_machine_intelligence } }
 	random_weight = { base = 5 }
 	modifier = {
-		planet_pop_assembly_mult = 0.20
+		planet_pop_assembly_mult = 0.15
 	}
 }
 
