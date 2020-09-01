@@ -217,6 +217,52 @@ civic_pacifist_culture = {
 	}
 }
 
+civic_guardian_of_the_world = {
+    potential = {
+		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+		authority = { NOT = { value = auth_corporate } }
+	}
+
+    possible = {
+		ethics = {
+			OR = {
+				value = ethic_militarism
+                value = ethic_xenophilia
+			}
+		}
+	}
+    random_weight = { base = 3 }
+
+    modifier = {
+		ship_speed_mult = 0.05
+        diplo_weight_mult = 0.05
+		federation_naval_cap_contribution_mult = 0.25
+	}
+}
+
+civic_military_isolationism = {
+    potential = {
+		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+		authority = { NOT = { value = auth_corporate } }
+	}
+
+    possible = {
+		ethics = {
+			OR = {
+				value = ethic_militarism
+                value = ethic_Xenophobia
+			}
+		}
+	}
+    random_weight = { base = 3 }
+
+    modifier = {
+		army_defensive_war_damage_mult = 0.25
+		ship_defensive_war_fire_rate_mult = 0.25
+		starbase_defensive_war_shipyard_build_cost_mult = 0.1
+	}
+}
+
 ### Here be NORMAL civics
 # Mat + Aut: Technoconservatism
 civic_technoconservatism = {
