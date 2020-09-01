@@ -263,6 +263,22 @@ civic_military_isolationism = {
 	}
 }
 
+### here be MACHINE civics 
+
+civic_machine_admin_ai = {
+	potential = {
+		authority = {
+			value = auth_ancient_machine_intelligence
+		}
+	}
+	random_weight = { base = 5 }
+	modifier = {
+		country_admin_cap_mult = 0.15
+                country_admin_cap_add = 0.10
+	}
+}
+
+
 ### Here be NORMAL civics
 # Mat + Aut: Technoconservatism
 civic_technoconservatism = {
