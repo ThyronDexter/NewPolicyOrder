@@ -287,17 +287,17 @@ priest = {
 			}
 			food = 2
 		}
-		upkeep = {
-			consumer_goods = 2
                 produces = {
 			trigger = {
 				exists = owner
-				owner = { has_valid_civic = civic_science_cult }
+				owner = { has_valid_civic = civic_science_cult}
 			}
-			society_research = 3
-                        engineering_research = 1
-                        physics_research = 1
+			physics_research = 1
+			engineering_research = 1
+			society_research = 1
 		}
+		upkeep = {
+			consumer_goods = 2
 	}
 
 	planet_modifier = {
