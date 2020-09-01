@@ -308,6 +308,26 @@ civic_giant_military = {
 	}
 }
 
+civic_stratocracy = {
+    potential = {
+		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+		authority = { NOT = { value = auth_corporate } }
+	}
+
+    possible = {
+		ethics = {
+			      value = ethic_militarism
+			}
+		}
+	}
+    random_weight = { base = 3 }
+
+    modifier = {
+		army_starting_experience_add
+	}
+}
+
+
 ### here be MACHINE civics 
 
 civic_machine_admin_ai = {
