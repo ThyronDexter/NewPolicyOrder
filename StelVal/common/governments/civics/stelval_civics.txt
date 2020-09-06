@@ -111,7 +111,6 @@ civic_personality_cult = {
 			value = auth_dictatorial
 			}
 		}
-	}
 	random_weight = { base = 3 }
 	modifier = {
 		country_base_influence_produces_add = 1
